@@ -4,6 +4,7 @@ const data = [
     name: "john",
     email: "john@gmail.com",
     password: "12345678",
+    role: ["admin", "user"],
   },
   {
     id: 2,

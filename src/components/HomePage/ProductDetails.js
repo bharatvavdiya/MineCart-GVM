@@ -11,13 +11,20 @@ const ProductDetails = () => {
 
   return (
     <div>
-      <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
-        <Card sx={{ maxWidth: 345, margin: 2 }}>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100vh",
+        }}
+      >
+        <Card sx={{ maxWidth: 345 }}>
           <CardMedia
             component="img"
             height="140"
             image={product.image}
-            alt={product.title}
+            alt="green iguana"
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
@@ -25,6 +32,15 @@ const ProductDetails = () => {
             </Typography>
             <Typography variant="body2" color="text.secondary">
               Price: ${product.price}
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              Specifications: {product.specifications}
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              Colors: {product.colors}
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              Storage: {product.storage}
             </Typography>
           </CardContent>
         </Card>

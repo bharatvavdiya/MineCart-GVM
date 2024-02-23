@@ -33,6 +33,20 @@ const Product = () => {
     );
   }, [search]);
 
+  // Sort product by price and filter product same time
+  const [sort, setSort] = React.useState("");
+  const [sortedProducts, setSortedProducts] = React.useState([]);
+
+  React.useEffect(() => {
+    if (sort === "asc") {
+      setSortedProducts(filteredProducts.sort((a, b) => a.price - b.price));
+    } else if (sort === "desc") {
+      setSortedProducts(filteredProducts.sort((a, b) => b.price - a.price));
+    } else {
+      setSortedProducts(filteredProducts);
+    }
+  }, [sort, filteredProducts]);
+
   return (
     <div>
       <Box>
@@ -42,6 +56,18 @@ const Product = () => {
           onChange={(e) => setSearch(e.target.value)}
           style={{ width: "100%", padding: "10px", margin: "10px 0" }}
         />
+      </Box>
+
+      <Box>
+        <select
+          value={sort}
+          onChange={(e) => setSort(e.target.value)}
+          style={{ width: "100%", padding: "10px", margin: "10px 0" }}
+        >
+          <option value="">Default</option>
+          <option value="desc">Low to High</option>
+          <option value="asc">High to Low</option>
+        </select>
       </Box>
 
       <Box
@@ -89,6 +115,14 @@ const Product = () => {
                 style={{ margin: "0 auto" }}
               >
                 Add to Cart
+              </Button>
+              {/* View Details */}
+              <Button
+                size="small"
+                href={`/product/${product.id}`}
+                style={{ margin: "0 auto" }}
+              >
+                View Details
               </Button>
             </CardActions>
           </Card>

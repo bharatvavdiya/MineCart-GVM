@@ -39,6 +39,16 @@ const Login = () => {
               >
                 Sign up
               </span>
+              <br />
+              {/* signin as admin */}
+              <span
+                style={{ color: "#B87514", cursor: "pointer" }}
+                onClick={() => {
+                  navigate("/admin");
+                }}
+              >
+                Sign in as Admin
+              </span>
             </Box>
           </Box>
           <Box
