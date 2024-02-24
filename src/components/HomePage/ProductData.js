@@ -9,6 +9,8 @@ const Data = [
     colors: "Blue, Gold, Graphite, Silver",
     storage: "128GB, 256GB, 512GB",
     image: "https://source.unsplash.com/1600x900/?iphone",
+    vendorName: "Apple",
+    vendorId: "APL123"
   },
   {
     id: 2,
@@ -18,6 +20,8 @@ const Data = [
     colors: "Blue, Green, Red, White, Black",
     storage: "64GB, 128GB, 256GB",
     image: "https://source.unsplash.com/1600x900/?iphone",
+    vendorName: "Apple",
+    vendorId: "APL123"
   },
   {
     id: 3,
@@ -27,6 +31,8 @@ const Data = [
     colors: "Purple, Yellow, Green, Black, White, Red",
     storage: "64GB, 128GB, 256GB",
     image: "https://source.unsplash.com/1600x900/?iphone",
+    vendorName: "Apple",
+    vendorId: "APL123"
   },
   {
     id: 4,
@@ -36,6 +42,8 @@ const Data = [
     colors: "Black, White, Red",
     storage: "64GB, 128GB, 256GB",
     image: "https://source.unsplash.com/1600x900/?iphone",
+    vendorName: "Apple",
+    vendorId: "APL123"
   },
   // google phone
   {
@@ -46,6 +54,8 @@ const Data = [
     colors: "Just Black, Sorta Sage",
     storage: "128GB",
     image: "https://source.unsplash.com/1600x900/?google",
+    vendorName: "Google",
+    vendorId: "GOO456"
   },
   {
     id: 6,
@@ -55,6 +65,8 @@ const Data = [
     colors: "Just Black",
     storage: "128GB",
     image: "https://source.unsplash.com/1600x900/?google",
+    vendorName: "Google",
+    vendorId: "GOO456"
   },
   {
     id: 7,
@@ -64,6 +76,8 @@ const Data = [
     colors: "Just Black, Clearly White, Oh So Orange",
     storage: "64GB, 128GB",
     image: "https://source.unsplash.com/1600x900/?google",
+    vendorName: "Google",
+    vendorId: "GOO456"
   },
   {
     id: 8,
@@ -73,6 +87,8 @@ const Data = [
     colors: "Just Black, Clearly White, Purple-ish",
     storage: "64GB",
     image: "https://source.unsplash.com/1600x900/?google",
+    vendorName: "Google",
+    vendorId: "GOO456"
   },
   // samsung phone
   {
@@ -83,6 +99,8 @@ const Data = [
     colors: "Phantom Black, Phantom Silver, Phantom Titanium, Phantom Navy",
     storage: "128GB, 256GB, 512GB",
     image: "https://source.unsplash.com/1600x900/?samsung",
+    vendorName: "Samsung",
+    vendorId: "SAM789"
   },
   {
     id: 10,
@@ -92,6 +110,8 @@ const Data = [
     colors: "Phantom Black, Phantom Silver, Phantom Violet",
     storage: "128GB, 256GB",
     image: "https://source.unsplash.com/1600x900/?samsung",
+    vendorName: "Samsung",
+    vendorId: "SAM789"
   },
   {
     id: 11,
@@ -101,6 +121,8 @@ const Data = [
     colors: "Phantom Gray, Phantom White, Phantom Violet, Phantom Pink",
     storage: "128GB, 256GB",
     image: "https://source.unsplash.com/1600x900/?samsung",
+    vendorName: "Samsung",
+    vendorId: "SAM789"
   },
   {
     id: 12,
@@ -111,6 +133,31 @@ const Data = [
       "Cloud Red, Cloud Orange, Cloud Lavender, Cloud Mint, Cloud Navy, Cloud White",
     storage: "128GB",
     image: "https://source.unsplash.com/1600x900/?samsung",
+    vendorName: "Samsung",
+    vendorId: "SAM789"
+  },
+  // new vendor phone
+  {
+    id: 13,
+    title: "New Vendor Phone 1",
+    price: 599,
+    specifications: "5.5-inch HD display",
+    colors: "Black, White",
+    storage: "32GB, 64GB",
+    image: "https://source.unsplash.com/1600x900/?phone",
+    vendorName: "New Vendor",
+    vendorId: "NEW001"
+  },
+  {
+    id: 14,
+    title: "New Vendor Phone 2",
+    price: 799,
+    specifications: "6.0-inch Full HD display",
+    colors: "Blue, Red, Green",
+    storage: "128GB",
+    image: "https://source.unsplash.com/1600x900/?phone",
+    vendorName: "New Vendor",
+    vendorId: "NEW001"
   },
 ];
 

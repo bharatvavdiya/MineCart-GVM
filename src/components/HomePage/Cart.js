@@ -1,7 +1,3 @@
-// cart data comes from Home page and passed to cart component as a prop.
-
-// Path: src/components/HomePage/Cart.js
-
 import React from "react";
 import { Box, Button, Card, CardContent, Typography } from "@mui/material";
 
@@ -10,6 +6,19 @@ const Cart = ({ cart, setCart }) => {
     setCart(cart.filter((item) => item.id !== product.id));
   };
   localStorage.setItem("cart", JSON.stringify(cart.length));
+
+  const Checkout = (
+  ) => {
+    const total = cart.reduce((a, c) => a + c.price, 0);
+    const totalItems = cart.length;
+    const cartData = {
+      cart: cart,
+      total: total,
+      totalItems: totalItems,
+    };
+    localStorage.setItem("cart", JSON.stringify(cartData));
+    alert("Checkout Successful");
+  }
   return (
     <div>
       <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
@@ -42,6 +51,9 @@ const Cart = ({ cart, setCart }) => {
           color="primary"
           size="large"
           style={{ margin: "10px" }}
+          onClick={
+            () => Checkout()
+          }
         >
           Checkout
         </Button>

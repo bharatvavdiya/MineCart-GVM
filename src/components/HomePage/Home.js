@@ -44,7 +44,7 @@ const Home = () => {
               textDecoration: "none",
             }}
           >
-            Cart {items}
+            Cart {items?.length}
           </span>
         </div>
       </nav>

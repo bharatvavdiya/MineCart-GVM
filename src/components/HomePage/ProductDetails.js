@@ -42,6 +42,9 @@ const ProductDetails = () => {
             <Typography variant="body2" color="text.secondary">
               Storage: {product.storage}
             </Typography>
+            <Typography variant="body2" color="text.secondary">
+              Vendor: {product.vendor}
+            </Typography>
           </CardContent>
         </Card>
       </Box>
