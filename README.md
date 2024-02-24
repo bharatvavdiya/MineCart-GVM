@@ -18,7 +18,7 @@ To install MineCart, follow these steps:
 
 1. Clone the repository:
    ```
-   git clone https://github.com/your-username/minecart.git
+   git clone https://github.com/bhratvavdiya/MineCart-GVM.git
    ```
 2. Navigate into the project directory:
    ```
@@ -69,7 +69,7 @@ Alternatively see the GitHub documentation on [creating a pull request](https://
 
 ## Contact
 
-If you want to contact me you can reach me at `<your_email@address.com>`.
+If you want to contact me you can reach me at `<bharatr.vavadiya@gmail.com>`.
 
 ## License
 
