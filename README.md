@@ -1,4 +1,3 @@
-
 # MineCart
 
 ## Introduction
@@ -9,8 +8,8 @@ The "MineCart" project is a front-end application for an online store that sells
 
 Before you begin, ensure you have met the following requirements:
 
-* You have installed the latest version of `Node.js` and `npm`.
-* You have a `<Windows/Linux/Mac>` machine. State if the setup is specific to an operating system.
+- You have installed the latest version of `Node.js` and `npm`.
+- You have a `<Windows/Linux/Mac>` machine. State if the setup is specific to an operating system.
 
 ## Installing MineCart
 
@@ -33,17 +32,16 @@ To install MineCart, follow these steps:
 
 This project uses the following npm libraries:
 
-* [React Bootstrap](https://react-bootstrap.github.io/): Used for implementing Bootstrap components in React.
-* [Bootstrap](https://getbootstrap.com/): Used for styling and layout.
-* [Material-UI (MUI)](https://mui.com/): Used for implementing Material Design components in React.
-* [React Router DOM](https://reactrouter.com/web/guides/quick-start): Used for managing routing in the application.
+- [React Bootstrap](https://react-bootstrap.github.io/): Used for implementing Bootstrap components in React.
+- [Bootstrap](https://getbootstrap.com/): Used for styling and layout.
+- [Material-UI (MUI)](https://mui.com/): Used for implementing Material Design components in React.
+- [React Router DOM](https://reactrouter.com/web/guides/quick-start): Used for managing routing in the application.
 
 To install these dependencies, run the following command:
 
 ```bash
 npm install react-bootstrap bootstrap @mui/material react-router-dom
 ```
-
 
 ## Using MineCart
 
@@ -67,10 +65,14 @@ To contribute to MineCart, follow these steps:
 
 Alternatively see the GitHub documentation on [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
+# Architectural Decisions
+
+Please note that for the scope of this project, I have intentionally avoided the use of advanced state management libraries such as Redux or the Context API. My primary focus has been on delivering the core functionality of the application.
+
+I have leveraged the capabilities of the browser's Local Storage to handle the state management of cart details. This approach also extends to the representation of data on the admin dashboard for report generation.
+
+This decision aligns with my goal of maintaining simplicity and clarity in my codebase. I believe this approach effectively demonstrates the core functionalities of the MineCart application without introducing additional complexity.
+
 ## Contact
 
-If you want to contact me you can reach me at `<bharatr.vavadiya@gmail.com>`.
-
-## License
-
-This project uses the following license: `<license_name>`.
+If you want to contact me you can reach me at `bharatr.vavadiya@gmail.com`
